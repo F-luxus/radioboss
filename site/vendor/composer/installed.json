@@ -1,0 +1,44 @@
+[
+    {
+        "name": "djsoftnet/radioboss-php-api",
+        "version": "1.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/djsoftnet/radioboss-php-api.git",
+            "reference": "d8da484afbdea2905b321bd44613a38705a8109e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/djsoftnet/radioboss-php-api/zipball/d8da484afbdea2905b321bd44613a38705a8109e",
+            "reference": "d8da484afbdea2905b321bd44613a38705a8109e",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "*",
+            "ext-simplexml": "*",
+            "php": "^7.2"
+        },
+        "time": "2020-08-16T13:10:30+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "RadioBoss\\": "src/",
+                "RadioBoss\\Exception\\": "src/exception",
+                "RadioBoss\\Object\\": "src/object",
+                "RadioBoss\\Util\\": "src/util"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "API Wrapper for RadioBoss",
+        "homepage": "https://github.com/djsoftnet/radioboss-php-api",
+        "keywords": [
+            "api",
+            "radioboss"
+        ]
+    }
+]

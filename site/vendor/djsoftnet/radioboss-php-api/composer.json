@@ -1,0 +1,21 @@
+{
+  "name": "djsoftnet/radioboss-php-api",
+  "description": "API Wrapper for RadioBoss",
+  "license": "MIT",
+  "keywords": [ "radioboss", "api" ],
+  "homepage": "https://github.com/djsoftnet/radioboss-php-api",
+  "type": "library",
+  "require": {
+    "php": "^7.2",
+    "ext-json": "*",
+    "ext-simplexml": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "RadioBoss\\": "src/",
+      "RadioBoss\\Exception\\": "src/exception",
+      "RadioBoss\\Object\\": "src/object",
+      "RadioBoss\\Util\\": "src/util"
+    }
+  }
+}

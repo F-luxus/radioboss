@@ -1,0 +1,95 @@
+.playing_now{
+    background: #b1ffb3;
+
+    padding: 15px;
+    border: 1px solid black;
+}
+.playing_next_label{
+    margin-top: 30px;
+    text-align: left;
+    font-weight: bold;
+}
+.playing_next {
+
+    background: #fffab1;
+    padding: 15px;
+    border: 1px solid black;
+}
+.mic_button.active{
+    background: #fd5656;
+}
+.mic_button.activetemp{
+    background: #fd5656;
+}
+.buttons{
+    margin: 20px;
+}
+.mic_button{
+    border: 1px solid black;
+    padding: 10px 5px;
+    background: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+.next_button{
+    border: 1px solid black;
+    padding: 10px 20px;
+    background: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+.player{
+    max-width: 600px;
+}
+body{
+	background-color: #f8f9fa;
+    -webkit-appearance: none;
+}
+.playing_time{
+    font-weight: bold;
+    font-size: 15px;
+}
+.now_time {
+    float: left;
+}
+.end_time {
+    float: right;
+}
+.butt{
+    background-color: #55c555;
+    width: 90%;
+    color: white !important;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.in input{
+	width: 85%;
+    padding: 10px 10px 10px 20px;
+    color: #55c555;
+    font-weight: 600;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;	
+}
+.in label{
+	font-size: 20px;
+    font-weight: 700;
+    color: #0c7723;
+    font-family: cursive;
+    line-height: 40px;
+}
+.error{
+	color: white;
+    padding: 10px;
+    background-color: #cc5656;
+    width: 20%;
+    margin: 10px;
+    border-radius: 5px;
+}
+.active{
+    background: #aa3838;
+}
