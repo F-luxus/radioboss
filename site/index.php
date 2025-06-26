@@ -35,11 +35,20 @@ error_reporting(E_ERROR);
         </div>
         <div class="buttons">
             <span onclick="change()" class="mic_button">🎙️ MIC</span>
-            <span onclick="playNext()" class="next_button"><i class="fa-solid fa-forward"></i></span>
+            <span onclick="playNext()" class="next_button"><i class="fa-solid fa-forward"></i></span><br>
+            <span onclick="doubleAction()" style="margin-top: 20px;display: inline-block;" class="next_button">🎙️ MIC + <i class="fa-solid fa-forward"></i></span>
         </div>
-
-<!--		<input onclick="events()" type="button" id="data" class="butt" value="Rodyti eventus" />-->
-<!--		<p id="eventai">Laukiama atsakymo</p>-->
+        <hr>
+        <div class="events">
+            <table style="max-width: 600px;">
+                <tr class="after">
+                    <th>Pavadinimas</th>
+                    <th>Kitas paleidimas</th>
+                    <th>Veiksmas</th>
+                </tr>
+            </table>
+        </div>
+        <hr>
 	</div>
 
 	
@@ -48,12 +57,16 @@ error_reporting(E_ERROR);
 
 
     $( document ).ready(function() {
+        events1()
         getmic()
         INIT()
         realtime();
         setInterval(realtime, 1000);
     });
-
+    function doubleAction(){
+        playNext()
+        change()
+    }
 	function change()
 	{
 
@@ -85,27 +98,6 @@ error_reporting(E_ERROR);
 	}
 </script>
 <script type="text/javascript">
-	function songs()
-	{
-		var server = window.location.hostname;
-		var port = "9001";
-		var pass = "0000000000";
-		$.ajax({
-		   type: "POST",
-			data: {
-			 server: server,
-			 port: port,
-			 pass: pass,
-			 action: "songs"
-			 },
-		   url: "req.php",
-		   success: function(msg){
-               if (msg === 'FAILED') { alert('Patikrink RadioBoss API nustatymus'); return 1; }
-		        document.getElementById('daina').innerHTML=msg;
-		   }
-		});
-	    
-	}
     const toHms = totalSeconds => {
         const h = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
         const m = String(Math.floor(totalSeconds % 3600 / 60)).padStart(2, '0');
@@ -167,7 +159,7 @@ error_reporting(E_ERROR);
 	}		
 </script>
 <script type="text/javascript">
-	function events()
+    function events1()
 	{
 		var server = window.location.hostname;
 		var port = "9001";
@@ -178,15 +170,18 @@ error_reporting(E_ERROR);
 			 server: server,
 			 port: port,
 			 pass: pass,
-			 action: "events"
+			 action: "events1"
 			 },
 		   url: "req.php",
 		   success: function(msg){
+
                if (msg === 'FAILED') { alert('Patikrink RadioBoss API nustatymus'); return 1; }
-		     document.getElementById('eventai').innerHTML=msg;
+               const $anchor = $('.events table .after');
+               $anchor.nextAll('tr').remove();
+               $(msg).insertAfter($anchor);
 		   }
 		});
-	    
+
 	}
     function getmic()
 	{
@@ -243,12 +238,14 @@ error_reporting(E_ERROR);
 </script>
 
 <script type="text/javascript">
+    function playEvent(e){
+        runevent(e, '')
+    }
 	function runevent(a, b)
 	{
 		var server = window.location.hostname;
 		var port = "9001";
 		var pass = "0000000000";
-		var typeId = document.getElementById('eventai').getAttribute('data-typeId');
 		$.ajax({
 		   type: "POST",
 			data: {
@@ -262,7 +259,7 @@ error_reporting(E_ERROR);
 		   url: "req.php",
 		   success: function(msg){
                if (msg === 'FAILED') { alert('Patikrink RadioBoss API nustatymus'); return 1; }
-		     document.getElementById('eventai').innerHTML=msg;
+               console.log(msg)
 		   }
 		});
 	    

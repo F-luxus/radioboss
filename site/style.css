@@ -9,6 +9,12 @@
     text-align: left;
     font-weight: bold;
 }
+.event_button{
+    background: #b1ffb3;
+    padding: 0 13px;
+    border: 1px solid;
+    cursor: pointer;
+}
 .playing_next {
 
     background: #fffab1;

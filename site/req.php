@@ -32,46 +32,27 @@ if($action=="next"){
 	$a = $api->PlayNext();
 	echo $a;
 }
-if($action=="events"){
-	$event = $api->scheduleList();
-	$number = substr_count($event, 'TaskName=');
-	echo"<hr><br>";
-	for($i=0; $i<$number; $i++){
-		$events = explode("TaskName=",$event);
-		$events = explode(" ",$events[$i+1]);
-		
-		$ids = explode("Id=",$event);
-		$ids = explode(" ",$ids[$i+1]);
-	
-		$events = str_replace('"','',$events[0]);
-		$ids = str_replace('"','',$ids[0]);
-		?>
-
-		<input onclick="runevent('<?php echo $ids; ?>','<?php echo $events; ?>');" type="button" id="data" class="butt" value="<?php echo $events; ?>" /><br><br>
-		<?php
-	}
-	echo"<hr>";
+if($action=="events1"){
+    $event = $api->scheduleList();
+    $xml = simplexml_load_string($event, "SimpleXMLElement", LIBXML_NOCDATA);
+    $json = json_encode($xml);
+    $array = json_decode($json,TRUE);
+    $data = [];
+    $html = '';
+    foreach($array['item'] as $key=>$event){
+        $event1 = $event['@attributes'];
+        if($event1['EnabledEvent'] == 'True'){
+            $html.='<tr style="text-align: center;">';
+            $event_id  = '"'.$event1['Id'].'"';
+            $html.='<td style="padding: 20px;">'.$event1['TaskName'].'</td>';
+            $html.='<td>'.$event1['TimeToStart'].'</td>';
+            $html.="<td><span class='event_button' onclick='playEvent($event_id)'>Paleisti</span></td>";
+            $html.='</tr>';
+        }
+    }
+    print_r($html);
+    exit();
 }
-if($action=="songs"){
-
-$er = $api->getPlaybackInfo()->getplayback();
-$duration = $api->getPlaybackInfo()->getplayback()->getlength();
-$position = $api->getPlaybackInfo()->getplayback()->getposition();
-$left = round(($duration - $position)/1000);
-function secondsToTime($lef) {
-    $dtF = new \DateTime('@0');
-    $dtT = new \DateTime("@$lef");
-    return $dtF->diff($dtT)->format('%i minutes %s seconds');
-}
-$cur = $api->getPlaybackInfo()->getcurrentTrack()->getcasttitle();
-$next = $api->getPlaybackInfo()->getNextTrack()->getcasttitle();
-echo "Dabar groja: <b>$cur</b><br>";
-echo "Iki kitos dainos liko: <b>".secondsToTime($left)."</b><br>";
-echo "Kita daina: <b>$next</b><br>";
-
-
-}
-
 if($action=="run"){
 	$id = $_POST[id];
 	$name = $_POST[name];
