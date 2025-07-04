@@ -1,0 +1,93 @@
+object TGenSettings
+  Parts = <
+    item
+      CatID = 'BJCUXAWIOCPGCUVBIKCW'
+    end>
+  UseLen = True
+  Len = 120
+  DontRepeatArtist = True
+  DontRepeatArtistMin = 30
+  DontRepeatArtistComparePercent = 100
+  DontRepeatArtistUseMultiple = False
+  DontRepeatTrack = True
+  DontRepeatTrackMin = 120
+  DontRepeatAlbum = False
+  DontRepeatAlbumMin = 60
+  DontRepeatAlbumSameArtist = True
+  DontRepeatTitle = True
+  DontRepeatTitleMin = 60
+  ReadAdditionalInfo = True
+  UsePlaylistWindowTracks = False
+  UseLastPlayed = False
+  OverlapAmount = 0
+  EmptyOnError = False
+  FilterNonPlayable = False
+  Priority = '012'
+  Categories = <
+    item
+      CategoryID = 'BJCUXAWIOCPGCUVBIKCW'
+      Name = 'Muzika'
+      LengthType = 2
+      Length0 = 1
+      Length1 = 0
+      IgnoreDoNotRepeat = False
+      DoNotLoop = False
+      Outro = False
+      SrcType = 1
+      SrcPlaylists = 'G:\Muzika'
+      SrcIncludeSubfolders = False
+      SrcInsertType = 0
+      SrcPos = 1
+      SrcPosAutoAdvance = False
+      FYearExclude = False
+      FLengthEnabled = False
+      FLengthTo = 9999.000000000000000000
+      FBPMExclude = False
+      FRatingFrom = 0
+      FRatingTo = 0
+      FRatingExclude = False
+      FGenreFilter = False
+      PriorityRules = <>
+      PriorityRating = <
+        item
+          Value = -40
+        end
+        item
+          Value = -30
+        end
+        item
+          Value = -20
+        end
+        item
+          Value = -10
+        end
+        item
+          Value = 0
+        end
+        item
+          Value = 10
+        end
+        item
+          Value = 15
+        end
+        item
+          Value = 20
+        end
+        item
+          Value = 30
+        end
+        item
+          Value = 40
+        end>
+      UsePriorityRating = False
+      OverrideArtistRpt = False
+      DontRepeatArtistMin = 0
+      OverrideTrackRpt = True
+      DontRepeatTrackMin = 30
+      OverrideAlbumRpt = False
+      DontRepeatAlbumMin = 0
+      OverrideTitleRpt = False
+      DontRepeatTitleMin = 0
+      SeparationRules = <>
+    end>
+end

@@ -1,0 +1,640 @@
+object TProfileStd
+  CartPanelSet = <
+    item
+      CartItems = <>
+      PanelType = -1
+      Cols = 0
+      Rows = 0
+      HotKeyBase = 0
+      OneAtATime = False
+    end>
+  CartPanelSetZ2 = <>
+  CartPanelSetZ3 = <>
+  CartPanelSetZD = <>
+  MainFont.Charset = DEFAULT_CHARSET
+  MainFont.Color = clBlack
+  MainFont.Height = -12
+  MainFont.Name = 'Segoe UI'
+  MainFont.Style = []
+  PlayingFont.Charset = DEFAULT_CHARSET
+  PlayingFont.Color = clNone
+  PlayingFont.Height = -12
+  PlayingFont.Name = 'Segoe UI'
+  PlayingFont.Style = [fsBold]
+  PlayingBg = clNone
+  PlayedFont.Charset = DEFAULT_CHARSET
+  PlayedFont.Color = clNone
+  PlayedFont.Height = -12
+  PlayedFont.Name = 'Segoe UI'
+  PlayedFont.Style = []
+  PlayedBg = clNone
+  NotesFont.Charset = DEFAULT_CHARSET
+  NotesFont.Color = clBlack
+  NotesFont.Height = -11
+  NotesFont.Name = 'Tahoma'
+  NotesFont.Style = []
+  WindowFont.Charset = DEFAULT_CHARSET
+  WindowFont.Color = clBlack
+  WindowFont.Height = -12
+  WindowFont.Name = 'Segoe UI'
+  WindowFont.Style = []
+  CountersFont.Charset = DEFAULT_CHARSET
+  CountersFont.Color = clBlack
+  CountersFont.Height = -13
+  CountersFont.Name = 'Segoe UI'
+  CountersFont.Style = [fsBold]
+  AuxFont.Charset = DEFAULT_CHARSET
+  AuxFont.Color = clBlack
+  AuxFont.Height = -12
+  AuxFont.Name = 'Segoe UI'
+  AuxFont.Style = []
+  Gain = -6
+  CrossfadeLastPreset = 'Default'
+  AdditionalFXA = 
+    #0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0 +
+    #0#0#0#0#0#0#0#8364'?%A'#184';'#205#204'L='#0#0#160'@'#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0 +
+    #0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  QOn = False
+  QInterval = 120
+  QAction = 1
+  QLoadAuxWhenEmpty = True
+  QThreshold = 0.000316227766016838
+  QShuffleAux = False
+  Col_Master = <
+    item
+      Width = 70
+      Idx = 14
+      Version = 1
+    end
+    item
+      Width = 75
+      Idx = 13
+    end
+    item
+      Width = 681
+      Idx = 12
+    end
+    item
+      Width = 0
+      Idx = 10
+    end
+    item
+      Width = 0
+      Idx = 8
+    end
+    item
+      Width = 55
+      Idx = 7
+    end
+    item
+      Width = 0
+      Idx = 6
+    end
+    item
+      Width = 0
+      Idx = 4
+    end
+    item
+      Width = 0
+      Idx = 3
+    end
+    item
+      Width = 50
+      Idx = 0
+    end
+    item
+      Width = 0
+      Idx = 1
+    end
+    item
+      Width = 25
+      Idx = 2
+    end
+    item
+      Width = 0
+      Idx = 5
+    end
+    item
+      Width = 0
+      Idx = 9
+    end
+    item
+      Width = 0
+      Idx = 11
+    end
+    item
+      Width = 70
+      Idx = 15
+    end>
+  Col_Schedule = <
+    item
+      Width = 80
+      Idx = 7
+      Version = 1
+    end
+    item
+      Width = 70
+      Idx = 0
+    end
+    item
+      Width = 62
+      Idx = 8
+    end
+    item
+      Width = 20
+      Idx = 1
+    end
+    item
+      Width = 20
+      Idx = 2
+    end
+    item
+      Width = 20
+      Idx = 3
+    end
+    item
+      Width = 60
+      Idx = 4
+    end
+    item
+      Width = 107
+      Idx = 5
+    end
+    item
+      Width = 50
+      Idx = 6
+    end
+    item
+      Width = 70
+      Idx = 9
+    end>
+  Col_FindResult = <
+    item
+      Width = 118
+      Idx = 0
+      Version = 1
+    end
+    item
+      Width = 118
+      Idx = 1
+    end
+    item
+      Width = 50
+      Idx = 2
+    end
+    item
+      Width = 0
+      Idx = 3
+    end
+    item
+      Width = 50
+      Idx = 4
+    end
+    item
+      Width = 200
+      Idx = 5
+    end
+    item
+      Width = 50
+      Idx = 6
+    end
+    item
+      Width = 100
+      Idx = 7
+    end
+    item
+      Width = 100
+      Idx = 8
+    end>
+  Col_Explorer = <>
+  Col_Report = <
+    item
+      Width = 74
+      Idx = 3
+      Version = 1
+    end
+    item
+      Width = 0
+      Idx = 1
+    end
+    item
+      Width = 244
+      Idx = 0
+    end
+    item
+      Width = 0
+      Idx = 2
+    end
+    item
+      Width = 75
+      Idx = 4
+    end>
+  PlaylistTabs = <
+    item
+      Caption = 'Playlist 1'
+      TabType = 0
+      SearchIdx = 0
+      Cols = <>
+      ReadInfo = False
+      NonPlayable = False
+      AuxVolume = 1000
+      SortResults = False
+      SourceType = 0
+      QueueMode = False
+    end>
+  LastPlaylistTabIndex = 1
+  Zone2Tabs = <>
+  Zone2TabIndex = 0
+  Zone3Tabs = <>
+  Zone3TabIndex = 0
+  ZoneDTabs = <>
+  ZoneDTabIndex = 0
+  HotKeys = <
+    item
+      Value = 0
+    end
+    item
+      Value = 80
+    end
+    item
+      Value = 83
+    end
+    item
+      Value = 78
+    end
+    item
+      Value = 66
+    end
+    item
+      Value = 82
+    end
+    item
+      Value = 77
+    end
+    item
+      Value = 84
+    end
+    item
+      Value = 32
+    end
+    item
+      Value = 13
+    end
+    item
+      Value = 188
+    end
+    item
+      Value = 190
+    end
+    item
+      Value = 1
+    end
+    item
+      Value = 1
+    end
+    item
+      Value = 119
+    end
+    item
+      Value = 117
+    end
+    item
+      Value = 88
+    end
+    item
+      Value = -68
+    end>
+  Taskbar_btn = True
+  AutoAmpUsePrescan = True
+  VisOn = True
+  CenterList = True
+  ShowCurrentTrackInTI = True
+  SelectionFollowsPlayback = False
+  NotesReadTag = True
+  Break1 = False
+  DisableRptOnNext = False
+  MuteLevel = -30
+  CloseBtn = 1
+  AllowSort = False
+  AllowScheduleSort = True
+  ScheduleSortColumn = -1
+  ScheduleSortDirection = 0
+  RearVolume = 100
+  RearNextSec = 10
+  CanChangeTrackPos = True
+  CutSilence = True
+  PlaylistBg = clWhite
+  ClockFontColor = clBlack
+  WindowColor = 15987699
+  SplitterColor = 15000804
+  btnShuffle = True
+  btnRepeat = True
+  btnBreak = True
+  btnRepeatList = True
+  btnManual = True
+  ctrVolume = True
+  AutoSavePrf = True
+  Volume = 98
+  FormWidth = -799
+  FormHeight = 573
+  FormTop = -8
+  FormLeft = -8
+  FormFullScreen = False
+  NPPanelProp0 = 0.300000000000000000
+  NPPanelProp1 = 0.300000000000000000
+  btRepeat = False
+  btBreak = False
+  btShuffle = False
+  btRepeatList = True
+  ScheduleFadeTime = 600
+  OverlayFadeIn = 300
+  OverlayFadeOut = 400
+  MuteFadeTime = 1000
+  ForceClock24h = False
+  LastSearchIndex = 0
+  LastSearchBase = '(All)'
+  SearchReadAddInfo = False
+  SearchSort = False
+  SearchSourceType = 0
+  HideStreamURL = False
+  ScheduleAnnounceTime = 10
+  PanningPos = 0
+  IncludeStreamNameInTitle = False
+  ShowLeftTab = True
+  ShowCenterPanel = False
+  ShowInformation = True
+  MicPushToTalk = False
+  PlaylistItemSpacing = 6
+  SearchItemSpacing = 4
+  PlaybackButtonStyle = 'Flat Gray'
+  WindowStyle = 'Windows'
+  RememberPlaylistFilenames = False
+  LeftTabIdx = 2
+  FrameColor = 13158600
+  LevelMeterMax = 0
+  LevelMeterRMS = False
+  PrevTrackColor = 9948159
+  CurTrackColor = 11796401
+  NextTrackColor = 12645871
+  PlaylistGrid = False
+  PlaylistGridHorz = False
+  enc_outdir = 
+    'C:\Users\tomuk\AppData\Roaming\djsoft.net\RadioBOSS_1579895416\T' +
+    'emp\Encoder'
+  enc_prsindex = 0
+  enc_showparamwnd = True
+  FileTypes = <
+    item
+      Name = 'Type 0'
+      Id = 'Type0'
+      Color = clNone
+      BackColor = clNone
+      Amp = 0
+      IsMix = False
+      IsFadeOut = False
+      IsFadeIn = False
+      DoNotSendTitle = False
+      IncludeInReport = True
+      MixPointDetect = False
+      MixPointThreshold = 0.199526231496888000
+      StartFadeoutOnMix = False
+      DoNotMix = False
+      CustomTitleFormat = False
+      VoiceTrack = False
+      UseBed = False
+      BedLevel = 0
+      SkipAfterScheduled = False
+      SkipTwoOrMore = False
+      IdentSearch = 0
+    end
+    item
+      Name = 'Type 1'
+      Id = 'Type1'
+      Color = clNone
+      BackColor = clNone
+      Amp = 0
+      Mix = 2.500000000000000000
+      FadeOut = 2.000000000000000000
+      FadeIn = 1.500000000000000000
+      IsMix = True
+      IsFadeOut = True
+      IsFadeIn = True
+      DoNotSendTitle = False
+      IncludeInReport = True
+      MixPointDetect = True
+      MixPointThreshold = 0.199526231496888000
+      StartFadeoutOnMix = False
+      DoNotMix = False
+      CustomTitleFormat = False
+      VoiceTrack = False
+      UseBed = False
+      BedLevel = 0
+      SkipAfterScheduled = False
+      SkipTwoOrMore = False
+      IdentSearch = 0
+    end
+    item
+      Name = 'Commercial'
+      Id = 'Commercial'
+      Color = 592290
+      BackColor = clNone
+      Amp = 0
+      IsMix = False
+      IsFadeOut = False
+      IsFadeIn = False
+      DoNotSendTitle = False
+      IncludeInReport = True
+      MixPointDetect = False
+      MixPointThreshold = 0.199526231496888000
+      StartFadeoutOnMix = False
+      DoNotMix = False
+      CustomTitleFormat = False
+      VoiceTrack = False
+      UseBed = False
+      BedLevel = 0
+      SkipAfterScheduled = False
+      SkipTwoOrMore = False
+      IdentSearch = 0
+    end
+    item
+      Name = 'Jingle'
+      Id = 'Jingle'
+      Color = clNavy
+      BackColor = clNone
+      Amp = 0
+      IsMix = False
+      IsFadeOut = False
+      IsFadeIn = False
+      DoNotSendTitle = False
+      IncludeInReport = True
+      MixPointDetect = False
+      MixPointThreshold = 0.199526231496888000
+      StartFadeoutOnMix = False
+      DoNotMix = False
+      CustomTitleFormat = False
+      VoiceTrack = False
+      UseBed = False
+      BedLevel = 0
+      SkipAfterScheduled = False
+      SkipTwoOrMore = False
+      IdentSearch = 0
+    end
+    item
+      Name = 'Time Announcement'
+      Id = 'saytime'
+      Color = 4227072
+      BackColor = clNone
+      Amp = 0
+      IsMix = False
+      IsFadeOut = False
+      IsFadeIn = False
+      DoNotSendTitle = False
+      IncludeInReport = True
+      MixPointDetect = False
+      MixPointThreshold = 0.199526231496888000
+      StartFadeoutOnMix = False
+      DoNotMix = False
+      CustomTitleFormat = False
+      VoiceTrack = False
+      UseBed = False
+      BedLevel = 0
+      SkipAfterScheduled = False
+      SkipTwoOrMore = False
+      IdentSearch = 0
+    end
+    item
+      Name = 'Network Stream'
+      Id = '://'
+      Color = clNone
+      BackColor = clNone
+      Amp = 0
+      IsMix = False
+      IsFadeOut = False
+      IsFadeIn = False
+      DoNotSendTitle = False
+      IncludeInReport = True
+      MixPointDetect = False
+      MixPointThreshold = 0.199526231496888000
+      StartFadeoutOnMix = False
+      DoNotMix = False
+      CustomTitleFormat = False
+      VoiceTrack = False
+      UseBed = False
+      BedLevel = 0
+      SkipAfterScheduled = False
+      SkipTwoOrMore = False
+      IdentSearch = 0
+    end
+    item
+      Name = 'Command'
+      Id = '.command'
+      Color = clNone
+      BackColor = clNone
+      Amp = 0
+      IsMix = False
+      IsFadeOut = False
+      IsFadeIn = False
+      DoNotSendTitle = False
+      IncludeInReport = True
+      MixPointDetect = False
+      MixPointThreshold = 0.199526231496888000
+      StartFadeoutOnMix = False
+      DoNotMix = False
+      CustomTitleFormat = False
+      VoiceTrack = False
+      UseBed = False
+      BedLevel = 0
+      SkipAfterScheduled = False
+      SkipTwoOrMore = False
+      IdentSearch = 0
+    end
+    item
+      Name = 'Text to Speech'
+      Id = 'tts='
+      Color = clNone
+      BackColor = clNone
+      Amp = 0
+      IsMix = False
+      IsFadeOut = False
+      IsFadeIn = False
+      DoNotSendTitle = False
+      IncludeInReport = True
+      MixPointDetect = False
+      MixPointThreshold = 0.199526231496888000
+      StartFadeoutOnMix = False
+      DoNotMix = False
+      CustomTitleFormat = False
+      VoiceTrack = False
+      UseBed = False
+      BedLevel = 0
+      SkipAfterScheduled = False
+      SkipTwoOrMore = False
+      IdentSearch = 0
+    end>
+  ScheduleState = True
+  SchedulerSuspended = False
+  SchedulerManual = False
+  Sz_Width = 342
+  Sz_Height = 305
+  Sz_HeightM = -1
+  FnPlaylistColType = 0
+  TitleFormat = '%artist - %title'
+  ShowStatusBar = True
+  ShowToolBar = True
+  PlayButtonFunction = 0
+  PlaylistDoubleClickFunction = 1
+  WorkZones = 1
+  WorkZoneD = False
+  WorkZone2Size = 300
+  WorkZone3Size = 200
+  ExplorerSearchBar = False
+  TabsColor = clWhite
+  ListsColor = clWindow
+  CurrentStyleName = 'Windows 10'
+  NowPlayingViewStyle = 0
+  DoNotCrossfadeInManual = False
+  DoNotCrossfadeShortTracks = True
+  ShortTrackDuration = 45
+  FadeOnStop = True
+  CPPlaylistFadeOut = 100
+  CPPlaylistFadeIn = 1000
+  CPFadeOut = 400
+  CPFadeIn = 300
+  CPPlaylistVol = 25
+  CPGapKiller = False
+  MixThreshold = 0.199526231496888000
+  DoNotStartEventsWhenMicOn = False
+  MuteMonitorWhenMicOn = False
+  SkipNextRunChecked = False
+  FlashFinishingTrackMs = 0
+  FlashFinishingExcludeMs = 0
+  HighlightMouseOver = True
+  SelectionColor = clHighlight
+  DonotStartEventsWhenPaused = True
+  ShowDuplicates = False
+  ShowNonexistent = False
+  SavedDPI = 96
+  Jingles = <
+    item
+    end
+    item
+    end
+    item
+    end
+    item
+    end
+    item
+    end
+    item
+    end
+    item
+    end
+    item
+    end
+    item
+    end
+    item
+    end>
+  JinglVolume = 100
+  JVol = 25
+end
