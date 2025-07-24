@@ -57,7 +57,6 @@ error_reporting(E_ERROR);
 
 
     $( document ).ready(function() {
-        events1()
         getmic()
         INIT()
         realtime();
@@ -109,6 +108,7 @@ error_reporting(E_ERROR);
     }
     function realtime()
 	{
+        events1()
 		var server = window.location.hostname;
 		var port = "9001";
 		var pass = "0000000000";
